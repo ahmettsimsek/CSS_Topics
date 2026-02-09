@@ -1,0 +1,18 @@
+h1{
+    color: coral;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 60px;
+}
+
+li{
+    color: darkviolet;
+    font-size: 20px;
+}
+
+p{
+    margin: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-style: initial;
+}
