@@ -17,7 +17,7 @@ Elementin arka plan rengini mavi yapar.
 Saat yönünde sıralama:
 
 ```css 
-      padding: top right bottom left;
+padding: top right bottom left;
 ```
 
 👉 Bu örnekte: 
