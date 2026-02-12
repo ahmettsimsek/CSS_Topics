@@ -1,3 +1,6 @@
+<img width="882" height="710" alt="Image" src="https://github.com/user-attachments/assets/06c320f1-8514-4708-b80f-672311c8a15c" />
+
+
 🎯 Özelliklerin Açıklaması
 ✅ font-size
 
