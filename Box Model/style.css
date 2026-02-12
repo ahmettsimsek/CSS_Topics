@@ -1,0 +1,18 @@
+.box-model{
+    font-size: 40px;
+    text-align: center;
+    background-color: red;
+    padding: 30px;
+    margin: 30px;
+    border: 20px solid;
+}
+
+.pad-example{
+    font-size: 40px;
+    background-color: blue;
+    padding: 20px 25px 30px 25px; /* iç kısımdaki konumu ayarların içeriğin*/
+    margin: 10px 15px 20px 35px ;/*pencereden boşluk ayarlar*/
+    border: none;               /*çerçeve ayarlar */
+    border-left: 20px solid red; /* yukarda none dedik çünkü sadece sol olsun istedik*/
+    
+}
