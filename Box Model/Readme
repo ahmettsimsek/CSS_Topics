@@ -22,8 +22,9 @@ Saat yönünde sıralama:
 
 👉 Bu örnekte: 
 
+```css 
 padding: top right bottom left;
-
+```
 
 Üst: 20px
 
