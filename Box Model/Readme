@@ -1,0 +1,99 @@
+🎯 Özelliklerin Açıklaması
+✅ font-size
+
+Metnin boyutunu 40px yapar.
+
+Daha büyük ve dikkat çekici bir görünüm sağlar.
+
+✅ background-color
+
+Elementin arka plan rengini mavi yapar.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+✅ padding
+
+İçerik ile çerçeve arasındaki boşluğu belirler.
+
+Saat yönünde sıralama:
+
+```css 
+      padding: top right bottom left;
+```
+
+👉 Bu örnekte: 
+
+padding: top right bottom left;
+
+
+Üst: 20px
+
+Sağ: 25px
+
+Alt: 30px
+
+Sol: 25px
+
+✅ margin
+
+Elementin dışındaki boşluğu belirler.
+
+Diğer elementler veya sayfa kenarı ile arasına mesafe koyar.
+
+```css 
+margin: top right bottom left;
+```
+
+👉 Bu örnekte:
+
+```css 
+margin: top right bottom left;
+```
+
+Üst: 10px
+
+Sağ: 15px
+
+Alt: 20px
+
+Sol: 35px
+
+✅ border
+
+Elementin etrafına çerçeve ekler.
+
+```css 
+border: none;
+```
+
+👉 Tüm kenarları kaldırır.
+
+```css 
+border-left: 20px solid red;
+```
+
+👉 Sadece sol kenara 20px kalınlığında kırmızı bir çizgi ekler.
+
+🔥 Önemli Not
+
+Profesyonel geliştiriciler genellikle:
+
+✔️ Önce tüm border'ı kaldırır
+✔️ Ardından sadece istedikleri kenara border verir
+
+Bu yöntem daha temiz ve kontrol edilebilir CSS yazmayı sağlar.
+
+📊 Kısaca Mantık
+
+👉 Padding → İç boşluk
+👉 Margin → Dış boşluk
+👉 Border → Çerçeve
+
+🚀 Amaç
+
+Bu örnek sayesinde:
+
+Box Model mantığını öğrenebilir
+
+Padding vs Margin farkını anlayabilir
+
+Border kullanımını kavrayabilirsiniz.
