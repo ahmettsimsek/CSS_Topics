@@ -8,6 +8,8 @@ Daha büyük ve dikkat çekici bir görünüm sağlar.
 ✅ background-color
 
 Elementin arka plan rengini mavi yapar.
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ✅ padding
