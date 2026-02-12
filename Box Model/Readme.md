@@ -36,6 +36,17 @@ Alt: 30px
 
 Sol: 25px
 
+veya
+
+👉 Bu örnekte: 
+
+```css 
+padding: top-bottom right-left;
+```
+Üst-alt: 20px
+
+Sağ-sol: 25px
+
 ✅ margin
 
 Elementin dışındaki boşluğu belirler.
