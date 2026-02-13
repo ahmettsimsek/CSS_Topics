@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!--tek satırda kaç tane varsa hepsini yan yana getirmek için esnek biçimde-->
+        <h2>Display:flex</h2>
+        <div style="display: flex; ">
+            <div style="background-color: red;">kutu1</div>
+
+            <div style="background-color: turquoise;">kutu2</div>
+
+            <div style="background-color: green;">kutu2</div>
+        </div>
+
+         <!-- hepsini yan yana getirmek için esnek biçimde ve boytlandırma da yaparsak(flex:1 ile eğer flex:1 flex:3 verirsen 3/4 ü flexe verir örneğin)-->
+          <h2>flex:1</h2>
+        <div style="display: flex; margin-top: 20px;">
+            <div style="background-color: red; flex: 1;">kutu1</div>
+
+            <div style="background-color: turquoise; flex: 1">kutu2</div>
+
+            <div style="background-color: green; flex: 1">kutu2</div>
+        </div>
+
+        <!--aralarını belirli miktar açmak için column*gup kullanırız-->
+        <h2>column-gap: 10px</h2>
+        <div 
+            style="display: flex;
+                   margin-top: 20px;
+                   border: 1px solid black;
+                   column-gap: 10px; ">
+
+            <div style="background-color: red;">kutu1</div>
+
+            <div style="background-color: turquoise;">kutu2</div>
+
+            <div style="background-color: green;">kutu2</div>
+        </div>
+
+         <!--Herbirini en sag, orta, sol hizalamak için-->
+         <h2>justify-content: space-between</h2>
+        <div 
+            style="display: flex;
+                   margin-top: 20px;
+                   border: 1px solid black;
+                   justify-content: space-between;">
+
+            <div style="background-color: red;">kutu1</div>
+
+            <div style="background-color: turquoise;">kutu2</div>
+
+            <div style="background-color: green;">kutu2</div>
+        </div>
+
+        <!--Herbirini en sag, orta, sol hizalamak için ve en sag-solda eşit boşluk bırakmak için-->
+        <h2>justify-content: space-around</h2>
+        <div 
+            style="display: flex;
+                   margin-top: 20px;
+                   border: 1px solid black;
+                   justify-content: space-around">
+
+            <div style="background-color: red;">kutu1</div>
+
+            <div style="background-color: turquoise;">kutu2</div>
+
+            <div style="background-color: green;">kutu2</div>
+        </div>
+
+        <!--Herbirini en sag, orta, sol hizalamak için ve en sag-solda ve orta için eşit boşluk bırakmak için-->
+        <h2>justify-content: space-evenly</h2>
+        <div 
+            style="display: flex;
+                   margin-top: 20px;
+                   border: 1px solid black;
+                   justify-content: space-evenly">
+
+            <div style="background-color: red;">kutu1</div>
+
+            <div style="background-color: turquoise;">kutu2</div>
+
+            <div style="background-color: green;">kutu2</div>
+        </div>
+
+        <!--Dikeyde hizalama yapmak için-->
+        <h2>align-items: flex-start</h2>
+        <div 
+            style="display: flex;
+                   margin-top: 20px;
+                   border: 1px solid black;
+                   align-items: flex-start;
+                   height: 70px;">
+
+            <div style="background-color: red;">kutu1</div>
+
+            <div style="background-color: turquoise;">kutu2</div>
+
+            <div style="background-color: green;">kutu2</div>
+        </div>
+
+        <!--Dikeyde ortada hizalama yapmak için(eşit şekilde ekran kaplasın diye flex:1 ver)-->
+        <h2>align-items: center</h2>
+        <div 
+            style="display: flex;
+                   margin-top: 20px;
+                   border: 1px solid black;
+                   align-items: center;
+                   height: 70px;">
+
+            <div style="background-color: red; flex: 1;">kutu1</div>
+
+            <div style="background-color: turquoise;flex: 1">kutu2</div>
+
+            <div style="background-color: green;flex: 1">kutu2</div>
+        </div>
+
+        <!--Dikeyde en aşağıda hizalama yapmak için-->
+        <h2>align-items: flex-end</h2>
+        <div 
+            style="display: flex;
+                   margin-top: 20px;
+                   border: 1px solid black;
+                   align-items: flex-end;
+                   height: 70px;">
+
+            <div style="background-color: red;">kutu1</div>
+
+            <div style="background-color: turquoise;">kutu2</div>
+
+            <div style="background-color: green;">kutu2</div>
+        </div>
+
+        
+
+        
+
+
+
+
+
+    </body>
+    </html>
