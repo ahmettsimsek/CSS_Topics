@@ -2,7 +2,7 @@
 
 📦 CSS Flexbox Kısa Notlar
 
-Flexbox, elementleri yatay veya dikey olarak hizalamayı kolaylaştıran bir CSS yerleşim sistemidir.
+Flexbox, elementleri yatay veya dikey olarak hizalamayı kolaylaştıran bir CSS yerleşim sistemidir. Esneklik sağlar, direk yükseklik ve genişlik vermek farklı bir tarayıcıda açılması durumunda bozulmasına neden olur.
 
 ✅ display: flex
 
