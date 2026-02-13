@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Anton", sans-serif; /* yazı fontunu indirdiğimiz isim*/
+}
+
+body{
+    background-image: url("navbar.jpg");
+    background-size: cover; /*Görseli ekranın tamamını kaplayacak şekilde büyütür veya küçültür.*/
+    background-repeat: no-repeat; /* Resmin tekrar tekrar çoğalmasını engeller.*/
+}
+
+.navbar{
+    height: 60px; /*60px → Navbar’ın yüksekliği sabit olur.*/
+    width: 100%; /*100% → Ekranın tamamını yatay olarak kaplar.*/
+    background-color: gray;
+    color: aliceblue;
+    display: flex;
+    align-items:center ; /*Navbar içindeki öğeleri dikeyde ortalar.*/
+    flex-direction: row; /*Öğeleri yatay (soldan sağa) dizer.*/
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none; /* linkteki alt çizgi kalkar*/
+    color: aliceblue;/* linkteki rengi değişir*/
+}
