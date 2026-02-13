@@ -45,9 +45,9 @@ hedefledim.
 
 > Projenin ekran görüntüsünü buraya ekleyebilirsiniz.
 
-```
+
 <img width="1910" height="932" alt="Image" src="https://github.com/user-attachments/assets/186ee4f2-dfb0-4e10-a830-6d6c742153aa" />
-```
+
 
 ---
 
