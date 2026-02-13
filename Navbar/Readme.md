@@ -41,3 +41,4 @@ Bu CSS yapısı:
 
 👉 Yeni başlayan projeler için güçlü bir temel sağlar.
 ```
+<img width="1848" height="622" alt="Image" src="https://github.com/user-attachments/assets/222f36ae-9c39-4f5c-8603-b8c0ccad9390" />
