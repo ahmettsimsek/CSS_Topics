@@ -1,62 +1,43 @@
-✅ Global Reset (*)
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Anton", sans-serif;
-}
+```md
+# 🎨 CSS Başlangıç Ayarları – Kısa README
 
+## ✅ Global Reset (`*`)
+- Varsayılan margin ve padding değerlerini kaldırır.
+- Tüm sayfada aynı fontu kullanır.
+- Daha temiz ve tutarlı bir tasarım sağlar.
 
-✔ Tarayıcıdan gelen varsayılan boşlukları kaldırır.
-✔ Tüm sayfada aynı fontu kullanır.
-👉 Daha temiz ve tutarlı bir tasarım sağlar.
+---
 
-✅ Body (Arka Plan)
-body{
-    background-image: url("navbar.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+## ✅ Body (Arka Plan)
+- Sayfaya arka plan görseli ekler.
+- `cover` sayesinde görsel ekranı tamamen kaplar.
+- `no-repeat` ile görselin tekrar etmesi engellenir.
 
+---
 
-✔ Arka plana tek bir görsel ekler.
-✔ Görsel ekranı tamamen kaplar.
-✔ Tekrar etmez.
+## ✅ Navbar
+- `width: 100%` → Ekranın tamamını kaplar.
+- `height: 60px` → Sabit bir üst menü oluşturur.
+- `display: flex` → Öğeleri yan yana dizer.
+- `align-items: center` → Dikeyde ortalar.
+- `justify-content: space-around` → Öğeler arasında eşit boşluk bırakır.
 
-✅ Navbar Tasarımı
-.navbar{
-    height: 60px;
-    width: 100%;
-    background-color: gray;
-    color: aliceblue;
-    display: flex;
-    align-items:center;
-    justify-content: space-around;
-}
+---
 
+## ✅ Link Ayarları (`a`)
+- Alt çizgiyi kaldırır.
+- Navbar ile uyumlu renk verir.
+- Daha sade bir görünüm oluşturur.
 
-✔ Tam genişlikte üst menü oluşturur.
-✔ Flexbox sayesinde öğeleri yan yana dizer.
-✔ Dikeyde ortalar.
-✔ Öğeler arasında eşit boşluk bırakır.
+---
 
-✅ Link (a) Ayarları
-a{
-    text-decoration: none;
-    color: aliceblue;
-}
+## 🎯 Özet
+Bu CSS yapısı:
 
+✅ Tarayıcı varsayılanlarını sıfırlar  
+✅ Tam ekran arka plan oluşturur  
+✅ Modern bir navbar hazırlar  
+✅ Linkleri sadeleştirir  
 
-✔ Linklerin alt çizgisini kaldırır.
-✔ Navbar ile uyumlu renk verir.
-
-🎯 Özet
-
-* → Sayfa düzenini sıfırlar
-
-body → Arka planı ayarlar
-
-.navbar → Modern ve hizalı bir menü oluşturur
-
-a → Link görünümünü sadeleştirir
-
-👉 Bu yapı, çoğu web sitesinin başlangıç tasarımı için güçlü bir temel oluşturur 🚀
+👉 Yeni başlayan projeler için güçlü bir temel sağlar.
+```
