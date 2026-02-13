@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--ilk olarak inline etiketler block hale çevrilir-->
+        <span class="inline">merhaba</span>
+        <span>hey</span>
+        <a href="">tıkla</a>
+
+        <br>
+        <hr>
+
+        <!--ikinci olarak block etiketler inline hale  getirilir-->
+        <div class="block">block etiketi</div>
+        <p>tüm satır</p>
+
+        <hr>
+
+         <!--Son olarak block etiketler hem block(genişlik yükseklik alabilsin) hem inline gözükün diye-->
+         <div class="kutu1"></div>
+         <div class="kutu2"></div>
+    </body>
+</html>
+
+<!--
+Inline =  olduğu yer kadar kaplar, bu etiket genişlik yükseklik verilmez 
+
+Block  = tüm satırı kaplar, bu etiket genişlik yükseklik verilir 
+
+Inline-block  =  hem inline gibi gözüksün hem de blok etiketi olsun diye örneğin genişlik yükseklik ver ama yan yana olsun 
+-->
