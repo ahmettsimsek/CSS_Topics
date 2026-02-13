@@ -1,0 +1,153 @@
+*{
+    font-family: "Roboto", sans-serif;
+    box-sizing:border-box;  
+}
+
+body{
+    background-color: rgb(14, 15, 15);
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.sol{
+    flex: 1.5;
+    background-color:#010508;
+    width: 70%;
+}
+
+.resim{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: flex-start;
+    margin: 30px;
+}
+
+.baslik1{
+    display: inline-block;
+    color: brown;
+    margin-left: 10px;
+}
+
+.baslik2{
+    display: inline-block;
+    color: aliceblue;
+}
+
+.resim2{
+    width: 55%;
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left:110px
+
+}
+
+.sag{
+    flex: 1.2;
+    background-color:#0a0a11;
+    width: 70%;
+}
+
+p{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.bir{
+    font-size: small;
+    color: aliceblue;
+    margin-left: 50px;
+}
+
+.form1{
+    width: 350px;
+    margin-left: 20px;
+    border-radius: 6px;
+    height: 30px;
+    background: local;
+}
+
+.form2{
+    margin-top: 5px;
+    width: 350px;
+    margin-left: 20px;
+    border-radius: 6px;
+    height: 30px;
+    background: local;
+}
+
+.buton{
+    margin: 20px 0 0 20px;
+    width: 350px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(3, 63, 131);
+    color: gray;
+}
+
+.buton2{
+    margin: 20px 0 0 20px;
+    width: 350px;
+    height: 30px;
+    border-radius: 20px;
+    background:0ch;
+    color: white;
+
+}
+
+.buton3{
+    margin: 50px 0 0 20px;
+    width: 350px;
+    height: 30px;
+    border-radius: 20px;
+    background: none;
+    color: white;
+}
+
+.buton4{
+    margin: 10px 0 0 20px;
+    width: 350px;
+    height: 30px;
+    border: 2px solid rgb(63, 63, 198);
+    border-radius: 20px;
+    background: none;
+    color:  rgb(63, 63, 198);
+}
+
+.a2{
+    display: flex;
+    
+}
+
+.resim3{
+    width: 25%;
+    margin: 15px 150px;
+    
+}
+
+.foot{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: darkgrey;
+}
+
+.hr{
+    width: 100;
+}
+
+.hr2{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: lightgray;
+}
