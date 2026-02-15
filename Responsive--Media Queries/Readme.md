@@ -14,7 +14,7 @@ Görselleri responsive yapmak
 
 Sayfa açıldığında tüm <h1> etiketleri gizlidir:
 
-```
+```css
    h1 {
   display: none;
 }
@@ -31,7 +31,7 @@ Ekran Türü	Genişlik Aralığı	Gösterilen Başlık
 🖼️ Responsive Image
 ```
 
-```
+```css
 img {
   max-width: 100%;
   height: auto;
@@ -47,7 +47,7 @@ Oranı bozulmaz
 Küçük ekranlarda taşma yapmaz
 
 🔤 VW ile Font Boyutlandırma
-```
+```css
 p {
   font-size: 10vw;
 }
