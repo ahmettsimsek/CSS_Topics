@@ -21,7 +21,7 @@ Sayfa açıldığında tüm <h1> etiketleri gizlidir:
 ```
 
 Ekran genişliğine göre yalnızca ilgili başlık görünür
-
+```
 Ekran Türü	Genişlik Aralığı	Gösterilen Başlık
 📱 Mobile	320px – 480px	mobile
 📱 Tablet	481px – 768px	tablets
@@ -29,6 +29,7 @@ Ekran Türü	Genişlik Aralığı	Gösterilen Başlık
 🖥️ Desktop	1025px – 1200px	desktop
 🖥️ Large Screen	1201px+	large screen
 🖼️ Responsive Image
+```
 
 ```
 img {
