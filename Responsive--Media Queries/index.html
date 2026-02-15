@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            body{
+                background-color: black;
+            }
+
+            h1{
+                display: none;
+            }
+
+            /* large screen*/
+            @media (min-width: 1201px){
+                .large{
+                    background-color: brown;
+                    display: block;
+                }
+            }
+
+             /* desktop screen*/
+            @media (min-width: 1025px) and (max-width: 1200px){
+                .desktop{
+                    background-color: tomato;
+                    display: block;
+                }
+            }
+
+             /* laptop screen*/
+            @media (min-width: 769px) and (max-width: 1024px){
+                .laptops{
+                    background-color: orange;
+                    display: block;
+                } 
+            }
+
+             /* tablets screen*/
+            @media (min-width: 481px) and (max-width: 768px){
+                .tablets{
+                    background-color:  red;
+                    display: block;
+                } 
+            }
+
+             /* mobile screen*/
+            @media (min-width: 320px) and (max-width: 480px){
+                .mobile{
+                    background-color: green;
+                    display: block;
+                } 
+            }
+
+            /* Resim boyutu ayarlama*/
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+
+            /*vw ile pencere boyutuna göre oto bir boyutlandırma sağlanır. vw = 1%*/    
+            p{
+                font-size: 10vw; 
+                color: wheat;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 class="mobile">mobile</h1>
+        <h1 class="tablets">tablets</h1>
+        <h1 class="laptops">laptops</h1>
+        <h1 class="desktop">desktop</h1>
+        <h1 class="large">large screen</h1>
+
+        <img src="resim.jpg" alt="resim">
+
+        <p>hello</p>
+
+    </body>
+</html>
