@@ -20,7 +20,7 @@ Sayfa açıldığında tüm <h1> etiketleri gizlidir:
 }
 ```
 
-Ekran genişliğine göre yalnızca ilgili başlık görünür:
+Ekran genişliğine göre yalnızca ilgili başlık görünür
 
 Ekran Türü	Genişlik Aralığı	Gösterilen Başlık
 📱 Mobile	320px – 480px	mobile
