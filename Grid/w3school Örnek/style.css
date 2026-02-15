@@ -23,6 +23,7 @@
 
 .container div.menu {
     grid-area: menu;
+    padding-left: 20px;
 }
 
 .container div.content {
