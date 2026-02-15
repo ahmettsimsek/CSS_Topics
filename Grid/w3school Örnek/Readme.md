@@ -82,7 +82,7 @@ gap → Grid elemanları arasındaki boşluk
 padding → İç boşluk
 
 Arka plan renkleri → Görsel ayrım için
-
+'''
 📌 Oluşturulan Layout Yapısı
 ---------------------------------
 |           HEADER              |
@@ -91,6 +91,7 @@ Arka plan renkleri → Görsel ayrım için
 ---------------------------------
 |           FOOTER              |
 ---------------------------------
+'''
 
 🎯 Bu Projede Öğrenilenler
 
