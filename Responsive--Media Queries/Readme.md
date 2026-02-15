@@ -14,11 +14,11 @@ Görselleri responsive yapmak
 
 Sayfa açıldığında tüm <h1> etiketleri gizlidir:
 
-
+```
    h1 {
   display: none;
 }
-
+```
 
 Ekran genişliğine göre yalnızca ilgili başlık görünür:
 
@@ -29,11 +29,13 @@ Ekran Türü	Genişlik Aralığı	Gösterilen Başlık
 🖥️ Desktop	1025px – 1200px	desktop
 🖥️ Large Screen	1201px+	large screen
 🖼️ Responsive Image
+
+```
 img {
   max-width: 100%;
   height: auto;
 }
-
+```
 
 Bu sayede:
 
@@ -44,10 +46,11 @@ Oranı bozulmaz
 Küçük ekranlarda taşma yapmaz
 
 🔤 VW ile Font Boyutlandırma
+```
 p {
   font-size: 10vw;
 }
-
+```
 
 vw = viewport width
 
