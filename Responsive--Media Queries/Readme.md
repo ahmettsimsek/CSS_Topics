@@ -14,7 +14,7 @@ Görselleri responsive yapmak
 
 Sayfa açıldığında tüm <h1> etiketleri gizlidir:
 
-''' css 
+'''css 
 h1 {
   display: none;
 }
