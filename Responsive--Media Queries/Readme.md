@@ -14,11 +14,11 @@ Görselleri responsive yapmak
 
 Sayfa açıldığında tüm <h1> etiketleri gizlidir:
 
-'''css 
-h1 {
+
+   h1 {
   display: none;
 }
-'''
+
 
 Ekran genişliğine göre yalnızca ilgili başlık görünür:
 
