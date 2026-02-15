@@ -3,10 +3,116 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Grid</title>
+
     </head>
     <body>
-        
+
+        <!--birden fazla kutu için kapsayıcı olmak zorunda-->
+        <div class="kapsayici" 
+             style="
+             display: grid;
+             grid-template-columns: 100px 100px;"> <!--tek satırda kaç tane olsun istersek o kadar yazarız--> 
+            <div style="background-color: red;">kutu1</div>
+            <div style="background-color: blue;">kutu2</div>
+            <div style="background-color: turquoise;">kutu3</div>
+        </div>
+
+        <hr>
+
+        <h2>Satır ataması</h2>
+        <div class="kapsayici" 
+             style="
+             margin-top: 30px;
+             display: grid;
+             grid-template-columns: 100px 100px 100px 500px ;"> <!--tek satırda kaç tane olsun istersek o kadar yazarız 4 tane olucak yani--> 
+            <div style="background-color: red;">kutu1</div>
+            <div style="background-color: palevioletred;">kutu2</div>
+            <div style="background-color: turquoise;">kutu3</div>
+            <div style="background-color: yellow;">kutu4</div>
+        </div>
+
+        <hr>
+
+        <h2>fr</h2>
+        <!--esnek atama olduğunu görmüş oluruz sona fr atadıım-->
+        <div class="kapsayici" 
+             style="
+             margin-top: 30px;
+             display: grid;
+             grid-template-columns: 100px 100px 100px 1fr ;"> <!--tek satırda kaç tane olsun istersek o kadar yazarız 4 tane olucak yani--> 
+            <div style="background-color: red;">kutu1</div>
+            <div style="background-color: palevioletred;">kutu2</div>
+            <div style="background-color: turquoise;">kutu3</div>
+            <div style="background-color: yellow;">kutu4</div>
+        </div>
+
+        <hr>
+
+        <h2>fr</h2>
+        <!--hepsi eşit olsun istersek "fr" kullanırız. Esnek bir yapı kullanır. Sayfa boyutuna göre atar-->
+        <div class="kapsayici" 
+             style="
+             margin-top: 30px;
+             display: grid;
+             grid-template-columns: 1fr 1fr 1fr ;"> 
+            <div style="background-color: red; height: 200px;">kutu1</div>
+            <div style="background-color: palevioletred; height: 200px; ">kutu2</div>
+            <div style="background-color: turquoise; height: 200px;">kutu3</div>
+        </div>
+
+        <hr>
+
+        <h2>column-gap</h2>
+        <!--sağ-sol boşluk bırakmak için "column-gap"-->      
+        <div class="kapsayici" 
+             style="
+             margin-top: 30px;
+             display: grid;
+             column-gap: 10px;
+             grid-template-columns: 1fr 1fr 1fr ;"> 
+            <div style="background-color: red; height: 200px;">kutu1</div>
+            <div style="background-color: palevioletred; height: 200px; ">kutu2</div>
+            <div style="background-color: turquoise; height: 200px;">kutu3</div>
+        </div>
+
+        <hr>
+
+        <h2>row-gap</h2>
+         <!--alt-üst boşluk bırakmak için "row-gap"-->
+          <div class="kapsayici" 
+             style="
+             margin-top: 30px;
+             display: grid;
+             column-gap: 10px;
+             row-gap: 10px ;
+             grid-template-columns: 1fr 1fr 1fr ;"> 
+            <div style="background-color: red; height: 200px;">kutu1</div>
+            <div style="background-color: palevioletred; height: 200px; ">kutu2</div>
+            <div style="background-color: turquoise; height: 200px;">kutu3</div>
+            <div style="background-color: yellow; height: 200px; ">kutu4</div>
+            <div style="background-color: green; height: 200px;">kutu5</div>
+            <div style="background-color: gray; height: 200px;">kutu6</div>
+        </div>
+
+        <hr>
+
+        <h2>gap</h2>
+         <!--alt-üst-sağ-sol boşluk bırakmak için "row-gap"-->
+          <div class="kapsayici" 
+             style="
+             margin-top: 30px;
+             display: grid;
+             gap: 28px;   
+             grid-template-columns: 1fr 1fr 1fr ;"> 
+            <div style="background-color: red; height: 200px;">kutu1</div>
+            <div style="background-color: palevioletred; height: 200px; ">kutu2</div>
+            <div style="background-color: turquoise; height: 200px;">kutu3</div>
+            <div style="background-color: yellow; height: 200px; ">kutu4</div>
+            <div style="background-color: green; height: 200px;">kutu5</div>
+            <div style="background-color: gray; height: 200px;">kutu6</div>
+        </div>
+
+
     </body>
 </html>
