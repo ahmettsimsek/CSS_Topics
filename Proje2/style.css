@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: #536942;
+    --secondary: #ffd936;
+    --white: #efefef;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+    color: var(--primary);
+      overflow-x: hidden;
+}
+
+
+#main{
+    background-image: url(img/main-2.jpg);
+    min-height: 100vh;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+
+section{
+    margin: 50px auto; /* sectionlar arası boşluk yaratır*/
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav-list a {
+    color: var(--white);
+}
+
+.btn{
+    padding: 12px 20px ;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-secondary{
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.btn-primary{
+    border: none ;
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: var(--white);
+}
+
+.main-content .intro-heading{
+    font-size: 40px;
+}
+
+.main-content .meain-heading{
+    font-size: 90px;
+    margin-top: -20px;
+}
+
+.meain-content p{
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;  /*Bir elementi tamamen gizler ve sayfa düzeninden (layout’tan) çıkarır.*/ 
+    width: 40px;
+}
+
+.section-title h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.section-title .line{
+    width: 150px;
+    height: 6px;
+    border: 10px;
+    background-color: var(--secondary);
+    margin: auto;
+}
+
+.services{
+    margin-top: 40px;
+    display: flex;
+    justify-content:center;
+    gap: 16px;
+    flex-wrap: wrap; /*Flex elemanları satıra sığmazsa alt satıra geçmesini sağlar.*/
+}
+
+.service{
+    width: 240px;
+}
+
+.service img{
+    max-width: 100%;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.service img:hover{
+    transform: scale(1.3);
+}
+
+#testimonial {
+    background-color: #f1f2fa;
+}
+
+#testimonial .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    gap: 30px;
+    padding: 50px 16px ;
+}
+
+#testimonial h1{
+    font-size: 30px;
+    font-family: "Forum" , sans-serif;
+}
+
+#testimonial .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonial .man{
+    max-width: 15%;
+}
+
+#about-us .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:120px;
+}
+
+#about-us .about-image img{
+    width: 70%;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+#about-us .about-image img:hover{
+    transform: scale(1.3);
+}
+
+#about-us .container .about-content{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+} 
+
+#about-us .container .about-content h1{
+    font-family: "Forum", sans-serif;
+    font-size: 30px;
+}
+
+#questions{
+    min-height: 500px;
+    background-image: url("img/main.jpg");
+    background-position: bottom center;
+    background-size: cover;
+}
+
+#questions .container{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    text-align: center;
+}
+
+#questions .container h1{
+    font-size: 50px;
+}
+
+footer{
+    margin-top: 60px;
+}
+
+footer .container{
+    display: flex;
+    padding: 40px 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+}
+
+@media screen and (max-width: 520px) {
+    .menu-btn{
+        display: block; /*Bir elementi blok (satır kaplayan) hale getirir.*/ 
+    }
+
+    .nav-list{
+        flex-direction: column; 
+        background-color: gray;  /* 🔥 2️⃣ position: absolute; olunca*/ 
+        position:absolute;         /*✔️ Element artık normal akışta yer kaplamaz*/ 
+        top: 0;                    /*✔️ Diğer elementler onun yokmuş gibi davranır*/ 
+        right: -900px;                  /*✔️ top, left, right, bottom ile konum verilir */                     
+        width: 80%;                
+        height: 100vh;
+        padding-top: 80px;
+        transition: all 0.3s ease;  /*CSS değişikliklerinin yumuşak (animasyonlu) olmasını sağlar.*/
+    }
+
+    .nav-list.active{
+        right:0;
+    }
+
+    .nav-list li:not(:last-child){
+        text-align: left;   /* metni hizalamak için kullanılır*/ 
+        width: 100%;
+        padding: 10px 10px;
+        border-bottom: 1px solid var(--white);
+    }
+
+    #about-us .container{
+        flex-direction: column;
+        gap: 30px; /*Flex veya Grid içindeki elemanlar arasına boşluk koyar.*/
+    }
+
+    footer .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

@@ -8,7 +8,7 @@
     </head>
     <body>
         <!--Bu section 1. sayfa kısmı için-->
-        <section id="main">
+        <div id="main"> <!--burası da sectionda ama boşluk için oto div yaptık-->
             <!--Bu kısım üst nav bar kısmı için-->
             <div class="container">
                 <nav>
@@ -21,21 +21,21 @@
                         <li><a href="#">Home</a></li>
                         <li><button class="btn btn-secondary">202-505-3333</button></li>
                     </ul>
+                    <img src="img/menu.png" alt="btn" class="menu-btn">
                 </nav>
 
                 <!--Bu kısım içerik kısmı için-->
                 <div class="main-content">
                     <h1 class="intro-heading">we all love</h1>
                     <h1 class="meain-heading">nature</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus quos ratione provident vitae labore.
-                    </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. ipsum dolor sit.</p>
                     <button class="btn btn-primary">Get Started</button>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!--Bu section 2. sayfa kısmı için-->
-        <sections id="services">
+        <section id="services">
             <div class="container">
                 <div class="section-title">
                     <h1>Our Services</h1>
@@ -44,21 +44,17 @@
 
                 <div class="services">
                     <div class="service">
-                       <img src="img/service-1.jpg" alt="1"> 
+                       <img src="img/service-1.jpg" alt="1" > 
                        <h3>Web Design</h3>
                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, necessitatibus!</p>
                     </div>
-                </div>
-
-                <div class="services">
+                
                     <div class="service">
-                       <img src="img/service-2.jpg" alt="2"> 
+                       <img src="img/service-2.jpg" alt="2" > 
                        <h3>Grapich Design</h3>
                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, necessitatibus!</p>
                     </div>
-                </div>
-
-                <div class="services">
+                
                     <div class="service">
                        <img src="img/service-3.jpg" alt="3"> 
                        <h3>Content Creation</h3>
@@ -76,7 +72,7 @@
                 <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae animi amet ducimus impedit nostrum inventore modi aspernatur pariatur adipisci natus?
                 </h1>
                 <div class="profile">
-                    <img src="img/man.png" alt="">
+                    <img class="man" src="img/man.png" alt="">
                     <h4>Jane Miller</h4>
                 </div>
             </div>
@@ -85,7 +81,7 @@
          <!--Bu section 4. sayfa kısmı için-->
         <section id="about-us">
             <div class="container">
-                <div class="abount-content">
+                <div class="about-content">
                     <h4>ABOUT US</h4>
                     <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloribus excepturi harum ullam corrupti eligendi in, possimus sequi nesciunt nulla quos velit, ut ab quasi aliquid inventore dignissimos pariatur unde ratione commodi perferendis. Laudantium velit repellat quae ipsum adipisci.</p>
@@ -123,6 +119,15 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
         </footer>
+
+        <script>
+            const navBtn = document.querySelector(".menu-btn")
+            const navList = document.querySelector(".nav-list")
+
+            navBtn.addEventListener("click", function() {
+                navList.classList.toggle("active");
+            });
+        </script>
 
     </body>
 </html>
