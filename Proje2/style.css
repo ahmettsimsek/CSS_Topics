@@ -176,6 +176,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     gap:120px;
+    margin-left: 35px;
 }
 
 #about-us .about-image img{
@@ -277,6 +278,10 @@ footer .container{
     footer .container{
         flex-direction: column;
         gap: 20px;
+    }
+
+    #about-us .about-image img{
+        margin-left: 25px;
     }
 
 }
