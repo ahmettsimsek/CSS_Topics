@@ -68,7 +68,7 @@ navBtn.addEventListener("click", function() {
 
 CSS tarafı:
 
-'''css
+``` css
 .nav-list {
     position: absolute;
     right: -900px;
@@ -79,7 +79,8 @@ CSS tarafı:
     right: 0;
 }
 
-'''
+```
+
 # 🎨 Proje Bölümleri
 
 Hero Section
@@ -105,6 +106,7 @@ Tam ekran hero arka plan
 Buton tasarım sistemi (btn-primary, btn-secondary)
 
 Flexbox layout sistemi
+```
 
 # 📂 Klasör Yapısı
 project/
@@ -120,6 +122,7 @@ project/
     ├── service-3.jpg
     ├── about.jpg
     └── ...
+```
 # 🎯 Öğrenilen Konular
 
 Bu projede:
