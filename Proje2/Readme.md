@@ -31,7 +31,7 @@ Mobil menü için JavaScript ile toggle sistemi eklenmiştir
 
 Hover animasyonları ve geçiş efektleri bulunmaktadır
 
-🛠️ Kullanılan Teknolojiler
+# 🛠️ Kullanılan Teknolojiler
 
 HTML5
 
@@ -68,6 +68,7 @@ navBtn.addEventListener("click", function() {
 
 CSS tarafı:
 
+'''css
 .nav-list {
     position: absolute;
     right: -900px;
@@ -77,6 +78,8 @@ CSS tarafı:
 .nav-list.active {
     right: 0;
 }
+
+'''
 # 🎨 Proje Bölümleri
 
 Hero Section
