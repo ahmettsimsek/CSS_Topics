@@ -10,6 +10,8 @@
 
 <img width="1902" height="552" alt="Image" src="https://github.com/user-attachments/assets/e9d53cb6-0210-4524-88c1-82b91e32941a" />
 
+'''
+
 🌿 Nature Landing Page
 
 Responsive (mobil uyumlu) bir Landing Page projesidir.
@@ -147,3 +149,5 @@ Dark mode desteği eklenebilir
 
 Ahmet Şimşek
 Computer Engineer
+
+'''
