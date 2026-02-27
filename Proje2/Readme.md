@@ -12,12 +12,12 @@
 
 '''
 
-🌿 Nature Landing Page
+#🌿 Nature Landing Page
 
 Responsive (mobil uyumlu) bir Landing Page projesidir.
 HTML, CSS ve temel JavaScript kullanılarak geliştirilmiştir.
 
-🚀 Proje Hakkında
+# 🚀 Proje Hakkında
 
 Bu proje:
 
@@ -45,7 +45,7 @@ JavaScript (DOM Manipulation)
 
 Google Fonts (DM Sans & Forum)
 
-📱 Responsive Özellik
+# 📱 Responsive Özellik
 
 520px altındaki ekranlarda:
 
@@ -77,7 +77,7 @@ CSS tarafı:
 .nav-list.active {
     right: 0;
 }
-🎨 Proje Bölümleri
+# 🎨 Proje Bölümleri
 
 Hero Section
 
@@ -91,7 +91,7 @@ Questions CTA Section
 
 Footer
 
-✨ Özellikler
+# ✨ Özellikler
 
 Smooth hover zoom efekti (services ve about image)
 
@@ -103,7 +103,7 @@ Buton tasarım sistemi (btn-primary, btn-secondary)
 
 Flexbox layout sistemi
 
-📂 Klasör Yapısı
+# 📂 Klasör Yapısı
 project/
 │
 ├── index.html
@@ -117,7 +117,7 @@ project/
     ├── service-3.jpg
     ├── about.jpg
     └── ...
-🎯 Öğrenilen Konular
+# 🎯 Öğrenilen Konular
 
 Bu projede:
 
@@ -135,7 +135,7 @@ JavaScript ile class toggle işlemi
 
 pratik edilmiştir.
 
-📌 Geliştirilebilir Alanlar
+# 📌 Geliştirilebilir Alanlar
 
 Menüye animasyonlu ikon dönüşümü (hamburger → X)
 
@@ -145,7 +145,7 @@ Form validation sistemi eklenebilir
 
 Dark mode desteği eklenebilir
 
-👨‍💻 Geliştirici
+# 👨‍💻 Geliştirici
 
 Ahmet Şimşek
 Computer Engineer
