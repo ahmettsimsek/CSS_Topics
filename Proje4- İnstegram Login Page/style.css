@@ -104,7 +104,7 @@ input {
     border: 1px solid #30363d; /* İnce çerçeve rengi */
     border-radius: 8px;       /* Köşeleri hafif yuvarlar */
     color: white;             /* Yazılan yazının rengi */
-    outline: none;            /* Tıklandığında çıkan varsayılan mavi çerçeveyi siler */
+    
 }
 
 .btn-login {
