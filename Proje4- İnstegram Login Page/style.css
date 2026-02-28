@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;/* Sayfanın en az ekran boyu kadar olmasını sağlar */
+    flex-direction: column; /* Elemanları (container ve footer) alt alta dizer */
+}
+
+.container {
+    flex: 1; /* Bu, container'ın footer'dan kalan tüm boşluğu kaplamasını sağlar */
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-self: center; /* Container'ı yatayda ortalar */
+}
+
+/* SOL TARAF (Görsel ve Yazı) */
+.hero-section {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+    position: relative; /* Logoyu içine sabitlemek için */
+}
+
+.hero-section .brand-logo {
+    position: absolute; /* Akışı bozmadan sol üste yerleşir */
+    top: 10px;
+    left: 20px;
+}
+
+.hero-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 19px;
+    margin-bottom: 30px;
+    max-width: 400px;
+    line-height: 1.2;
+}
+
+.hero-section h1 span {
+    background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-section .image-stack {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.vertical-line {
+    width: 0.8px;
+    min-height: 100vh;       /* Çizgi uzunluğu */
+    background-color: gray;
+}
+
+/* SAĞ TARAF (Giriş Formu) */
+.login-section {
+    flex: 0.8;
+    background-color: #0d1117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+}
+
+.login-box {
+    width: 80%;
+    max-width: 350px;
+}
+
+.login-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #1a1f26;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #00376b;
+    color: #8faecb;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: block;
+    margin: 20px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.btn-facebook {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: #1a1f26;
+    border: 1px solid #30363d;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btn-create-account {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #0095f6;
+    color: #0095f6;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.meta-footer {
+    margin-top: 30px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+.footer{
+    width: 100%;
+    background-color: #000000; /* Görseldeki gibi siyah veya çok koyu gri */
+    margin-top: auto; /* İŞTE BU: Footer'ı en alta yapıştıran komut */
+    border-top: 2px solid #30363d; /* Opsiyonel: Üstten ince bir ayraç çizgisi */
+    padding: 15px
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center; /* Linkleri ortalar */
+    gap: 16px;
+    list-style: none;
+    flex-wrap: wrap; /* Mobilde linklerin taşmasını önler */
+}
+
+.footer-links li a{
+    text-decoration: none;
+    color: #8e8e8e; /* Instagram gri tonu */
+    font-size: 9px;
+}
+
+.footer .finale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    gap: 15px;
+}
+
+.footer .finale select{
+    background-color: transparent;
+    color: #8e8e8e;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Option (açılır menü elemanları) renkleri */
+/* Not: Bazı tarayıcılar option stillerini kısıtlar, bu yüzden arkaplanı elle veriyoruz */
+.finale select option {
+    background-color: #1a1f26;   /* Açılan kutunun içini koyu yapar */
+    color: white;
+}
+
+.footer .finale2{
+    color: #8e8e8e;
+    font-size: 12px;
+}
