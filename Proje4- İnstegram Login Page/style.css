@@ -1,129 +1,130 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;          /* Tarayıcının verdiği varsayılan dış boşlukları sıfırlar */
+    padding: 0;         /* Tarayıcının verdiği varsayılan iç boşlukları sıfırlar */
+    box-sizing: border-box; /* Padding ve border değerlerini genişliğe dahil eder, taşmayı önler */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Yazı tipini belirler */
 }
 
 body {
-    background-color: #000000;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;/* Sayfanın en az ekran boyu kadar olmasını sağlar */
-    flex-direction: column; /* Elemanları (container ve footer) alt alta dizer */
+    background-color: #000000; /* Arka planı tamamen siyah yapar */
+    color: white;             /* Varsayılan metin rengini beyaz yapar */
+    display: flex;            /* Esnek kutu modelini aktif eder */
+    justify-content: center;  /* İçeriği yatayda ortalar */
+    align-items: flex-start;  /* İçeriği en yukarıdan başlatır */
+    min-height: 100vh;        /* Sayfanın boyunu en az ekran yüksekliği kadar yapar */
+    flex-direction: column;   /* İçindeki ana elemanları (container ve footer) alt alta dizer */
 }
 
 .container {
-    flex: 1; /* Bu, container'ın footer'dan kalan tüm boşluğu kaplamasını sağlar */
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    align-self: center; /* Container'ı yatayda ortalar */
+    flex: 1;           /* Kendi içinde kalan tüm dikey boşluğu kaplar, footer'ı aşağı iter */
+    display: flex;     /* Sol ve sağ bölümleri yan yana dizmek için flex kullanır */
+    width: 100%;       /* Tam genişlik kaplar */
+    max-width: 1200px; /* Çok büyük ekranlarda içeriğin aşırı yayılmasını engeller */
+    align-self: center; /* Sayfa genişlese de içeriği ortada tutar */
 }
 
 /* SOL TARAF (Görsel ve Yazı) */
 .hero-section {
-    flex: 1.2;
+    flex: 1.2;          /* Sol tarafın sağ tarafa göre biraz daha geniş olmasını sağlar */
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
+    flex-direction: column; /* Logo, yazı ve resmi alt alta dizer */
+    align-items: center;    /* Elemanları yatayda ortalar */
+    justify-content: center; /* Elemanları dikeyde kutunun ortasına toplar */
     padding: 20px;
-    position: relative; /* Logoyu içine sabitlemek için */
+    position: relative;     /* Logoyu "absolute" ile konumlandırabilmek için referans noktasıdır */
 }
 
 .hero-section .brand-logo {
-    position: absolute; /* Akışı bozmadan sol üste yerleşir */
-    top: 10px;
-    left: 20px;
+    position: absolute; /* Logoyu normal akıştan çıkarıp bağımsız yapar */
+    top: 10px;          /* Üstten 10px boşluk bırakır */
+    left: 20px;         /* Soldan 20px boşluk bırakır */
 }
 
 .hero-section h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 19px;
-    margin-bottom: 30px;
-    max-width: 400px;
-    line-height: 1.2;
+    text-align: center; /* Yazıyı merkeze hizalar */
+    font-size: 2rem;    /* Yazı boyutunu belirler */
+    margin-top: 19px;   /* Üstten boşluk verir */
+    margin-bottom: 30px;/* Alttaki resimle arasına boşluk koyar */
+    max-width: 400px;   /* Yazının çok genişleyip okunurluğunu bozmamasını sağlar */
+    line-height: 1.2;   /* Satır aralığını daraltarak daha estetik görünmesini sağlar */
 }
 
 .hero-section h1 span {
+    /* Yazıya Instagram renk geçişini (gradient) uygular */
     background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; /* Gradienti sadece metnin olduğu yere hapseder */
+    -webkit-text-fill-color: transparent; /* Metnin asıl rengini yok ederek altındaki gradienti gösterir */
 }
 
 .hero-section .image-stack {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 450px;
+    max-width: 450px; /* Resmin aşırı büyük olmasını engeller */
 }
 
 .main-image {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+    width: 100%;       /* Bulunduğu kutunun genişliğine yayılır */
+    height: auto;      /* Oranı bozmadan yüksekliği ayarlar */
+    object-fit: contain; /* Resmin kutuya sığarken kesilmesini engeller */
 }
 
 .vertical-line {
-    width: 0.8px;
-    min-height: 100vh;       /* Çizgi uzunluğu */
-    background-color: gray;
+    width: 0.8px;             /* Çizgi kalınlığı */
+    min-height: 100vh;        /* Sayfa boyunca uzanmasını sağlar */
+    background-color: gray;   /* Çizgi rengi */
 }
 
 /* SAĞ TARAF (Giriş Formu) */
 .login-section {
-    flex: 0.8;
-    background-color: #0d1117;
+    flex: 0.8;                /* Sağ tarafın sol tarafa göre biraz daha dar olmasını sağlar */
+    background-color: #0d1117; /* Formun arkasındaki lacivert/siyah ton */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0;
+    justify-content: center;  /* Form kutusunu yatayda ortalar */
+    align-items: center;      /* Form kutusunu dikeyde ortalar */
+    border-radius: 0;         /* Kenar yuvarlaklığını sıfırlar */
 }
 
 .login-box {
-    width: 80%;
-    max-width: 350px;
+    width: 80%;               /* Kutunun ekranın %80'ini kaplamasını sağlar */
+    max-width: 350px;         /* Kutunun çok fazla genişlemesini engeller */
 }
 
 .login-title {
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: left;
+    font-weight: bold;        /* Yazıyı kalın yapar */
+    margin-bottom: 20px;      /* Başlık ve inputlar arasına boşluk bırakır */
+    text-align: left;         /* Yazıyı sola dayalı yapar */
 }
 
 input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 10px;
-    background-color: #1a1f26;
-    border: 1px solid #30363d;
-    border-radius: 8px;
-    color: white;
-    outline: none;
+    width: 100%;              /* Inputun kutuyu tam kaplamasını sağlar */
+    padding: 12px;            /* Yazı yazarken kenarlardan boşluk bırakır */
+    margin-bottom: 10px;      /* İki input arasını açar */
+    background-color: #1a1f26; /* Inputun iç rengi */
+    border: 1px solid #30363d; /* İnce çerçeve rengi */
+    border-radius: 8px;       /* Köşeleri hafif yuvarlar */
+    color: white;             /* Yazılan yazının rengi */
+    outline: none;            /* Tıklandığında çıkan varsayılan mavi çerçeveyi siler */
 }
 
 .btn-login {
-    width: 100%;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: #00376b;
-    color: #8faecb;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
+    width: 100%;              /* Butonu tam genişlik yapar */
+    padding: 10px;            /* Butonun iç yüksekliğini ayarlar */
+    border-radius: 20px;      /* Butonu oval/yuvarlak yapar */
+    background-color: #00376b; /* Butonun koyu mavi rengi */
+    color: #8faecb;           /* Butonun soluk mavi yazı rengi */
+    border: none;             /* Çerçeveyi siler */
+    font-weight: bold;        /* Yazıyı kalınlaştırır */
+    cursor: pointer;          /* Mouse ile üzerine gelince el işareti çıkar */
 }
 
 .forgot-password {
-    display: block;
-    margin: 20px 0;
-    color: white;
-    text-decoration: none;
-    font-size: 0.8rem;
-    text-align: center;
+    display: block;           /* Linki bir blok yapar, böylece genişlik/boşluk alabilir */
+    margin: 20px 0;           /* Üstten ve alttan boşluk verir */
+    color: white;             /* Yazı rengi */
+    text-decoration: none;    /* Altındaki çizgiyi siler */
+    font-size: 0.8rem;        /* Yazıyı küçültür */
+    text-align: center;       /* Yazıyı ortalar */
 }
 
 .btn-facebook {
@@ -135,10 +136,10 @@ input {
     border: 1px solid #30363d;
     color: white;
     font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    display: flex;            /* Logo ve yazıyı yan yana getirmek için */
+    align-items: center;      /* Dikeyde ortalar */
+    justify-content: center;  /* Yatayda ortalar */
+    gap: 10px;                /* Logo ve yazı arasına boşluk koyar */
     cursor: pointer;
 }
 
@@ -146,66 +147,64 @@ input {
     width: 100%;
     padding: 10px;
     border-radius: 20px;
-    background-color: transparent;
-    border: 1px solid #0095f6;
-    color: #0095f6;
+    background-color: transparent; /* Arka planı boşaltır */
+    border: 1px solid #0095f6;    /* Mavi ince çerçeve ekler */
+    color: #0095f6;               /* Yazı rengini mavi yapar */
     font-weight: bold;
     cursor: pointer;
 }
 
 .meta-footer {
-    margin-top: 30px;
-    text-align: center;
-    opacity: 0.7;
+    margin-top: 30px;         /* Üstteki butonlardan ayırır */
+    text-align: center;       /* Logoyu ortalar */
+    opacity: 0.7;             /* Logoyu biraz şeffaf yapar */
 }
 
-
-.footer{
-    width: 100%;
-    background-color: #000000; /* Görseldeki gibi siyah veya çok koyu gri */
-    margin-top: auto; /* İŞTE BU: Footer'ı en alta yapıştıran komut */
-    border-top: 2px solid #30363d; /* Opsiyonel: Üstten ince bir ayraç çizgisi */
-    padding: 15px
+/* FOOTER (Sayfanın En Altı) */
+.footer {
+    width: 100%;              /* Tüm sayfa genişliğini kaplar */
+    background-color: #000000;
+    margin-top: auto;         /* Üstteki tüm boşluğu kullanarak kendini en alta kilitler */
+    border-top: 2px solid #30363d; /* Üst kısma ince ayırıcı bir çizgi çeker */
+    padding: 15px;            /* İçerikten kenarlara boşluk bırakır */
 }
 
-.footer-links{
-    display: flex;
-    justify-content: center; /* Linkleri ortalar */
-    gap: 16px;
-    list-style: none;
-    flex-wrap: wrap; /* Mobilde linklerin taşmasını önler */
+.footer-links {
+    display: flex;            /* Linkleri yan yana dizer */
+    justify-content: center;  /* Link grubunu ortalar */
+    gap: 16px;                /* Linklerin arasına 16px boşluk koyar */
+    list-style: none;         /* Noktalı listeyi iptal eder */
+    flex-wrap: wrap;          /* Küçük ekranlarda linklerin aşağı kaymasını sağlar */
 }
 
-.footer-links li a{
-    text-decoration: none;
-    color: #8e8e8e; /* Instagram gri tonu */
-    font-size: 9px;
+.footer-links li a {
+    text-decoration: none;    /* Alt çizgiyi kaldırır */
+    color: #8e8e8e;           /* Instagram'ın klasik gri yazı rengi */
+    font-size: 9px;           /* Linkleri küçük yapar */
 }
 
-.footer .finale{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px auto;
-    gap: 15px;
+.footer .finale {
+    display: flex;            /* Dil seçimi ve telif yazısını yan yana getirir */
+    justify-content: center;  /* Ortalar */
+    align-items: center;      /* Dikey hizalar */
+    margin: 15px auto;        /* Üstten alttan boşluk verir ve kutuyu ortalar */
+    gap: 15px;                /* Elemanlar arasına boşluk bırakır */
 }
 
-.footer .finale select{
-    background-color: transparent;
-    color: #8e8e8e;
-    border: none;
-    font-size: 12px;
-    cursor: pointer;
+.footer .finale select {
+    background-color: transparent; /* Arka plan kutusunu yok eder */
+    color: #8e8e8e;               /* Yazıyı gri yapar */
+    border: none;                 /* Çerçeveyi siler */
+    font-size: 12px;              /* Yazı boyutu */
+    cursor: pointer;              /* Tıklanabilir el ikonu çıkar */
 }
 
-/* Option (açılır menü elemanları) renkleri */
-/* Not: Bazı tarayıcılar option stillerini kısıtlar, bu yüzden arkaplanı elle veriyoruz */
 .finale select option {
-    background-color: #1a1f26;   /* Açılan kutunun içini koyu yapar */
-    color: white;
+    background-color: #1a1f26;    /* Açılan menünün içindeki kutu rengi */
+    color: white;                 /* Açılan menüdeki yazı rengi */
 }
 
-.footer .finale2{
-    color: #8e8e8e;
-    font-size: 12px;
+.footer .finale2 {
+    color: #8e8e8e;               /* Telif yazısı rengi */
+    font-size: 12px;              /* Telif yazısı boyutu */
 }
