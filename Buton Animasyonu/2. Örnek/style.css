@@ -1,0 +1,65 @@
+/* Buton grubunu sayfanın tam ortasına yerleştiren konteynır */
+.button {
+    position: absolute;       /* Sayfa üzerinde bağımsız konumlandırma */
+    top: 50%;                 /* Üstten %50 uzaklık */
+    left: 50%;                /* Soldan %50 uzaklık */
+    transform: translate(-50%, -50%); /* Tam merkezleme için kendi boyutunun yarısı kadar geri çeker */
+    text-align: center;       /* İçindeki butonları yatayda ortalar */
+}
+
+/* Tüm butonların ortak temel tasarımı */
+.btn {
+    background: none;         /* Arka planı şeffaf yapar */
+    border: 2px solid #2c3e50; /* Buton çerçeve rengi ve kalınlığı */
+    font-size: 14px;
+    font-family: "Tahoma", Geneva, Verdana, sans-serif;
+    text-transform: uppercase; /* Tüm harfleri büyük yapar */
+    padding: 12px 20px;       /* İç boşluklar */
+    min-width: 200px;         /* Butonun minimum genişliği */
+    margin: 10px;             /* Butonlar arası dış boşluk */
+    cursor: pointer;          /* Mouse üzerine gelince el işareti çıkar */
+    transition: color 0.4s linear; /* Yazı rengi değişimini yumuşatır */
+
+    position: relative;       /* 'before' katmanının buton sınırları içinde kalması için referans noktası */
+    overflow: hidden;         /* 'before' katmanının butonun dışına taşan kısımlarını gizler */
+    z-index: 1;               /* Butonun içeriğini (yazıyı) en üst katmana taşır */
+}
+
+/* Mouse ile üzerine gelince yazı rengini beyaz yapar */
+.btn:hover{
+    color: #fff;
+}
+
+/* Butonun arkasındaki animasyonlu katman (Sanal eleman) */
+.btn::before {
+    content: "";              /* Sanal elemanın oluşması için boş içerik şarttır */
+    position: absolute;       /* Butona göre konumlanması için */
+    left: 0;
+    top: 0;
+    width: 100%;              /* Butonun tüm genişliğini kapla */
+    height: 100%;             /* Butonun tüm yüksekliğini kapla */
+    background-color: #2C3E50; /* Dolgu rengi */
+    z-index: -1;              /* Yazının (z-index: 1) arkasında kalması için */
+    transition: transform 0.5s; /* Hareketin yarım saniyede tamamlanmasını sağlar */
+    transform-origin: 0 0;    /* Animasyonun sol üst köşeden başlamasını sağlar */
+    /* Özel bir hız eğrisi: Hafifçe ileri gidip geri gelme (yaylanma) efekti verir */
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+/* --- YATAY ANİMASYON (btn1) --- */
+.btn1::before {
+    transform: scaleX(0);     /* Başlangıçta yatay genişliği 0 yap (görünmez) */
+}
+
+.btn1:hover::before {
+    transform: scaleX(1);     /* Üzerine gelince yatay genişliği tam boya getir */
+}
+
+/* --- DİKEY ANİMASYON (btn2) --- */
+.btn2::before {
+    transform: scaleY(0);     /* Başlangıçta dikey yüksekliği 0 yap (görünmez) */
+}
+
+.btn2:hover::before {
+    transform: scaleY(1);     /* Üzerine gelince dikey yüksekliği tam boya getir */
+}
