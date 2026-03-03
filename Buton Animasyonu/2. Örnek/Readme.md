@@ -46,7 +46,7 @@ Projede kullanılan en kritik CSS bloğu:
     transform-origin: 0 0;    /* Animasyonun başlangıç noktası (Sol Üst) */
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7); /* Yaylanma eğrisi */
 }
-
+```
 
 ## 🚀 Nasıl Kullanılır?
 Proje dosyalarını indirin.
