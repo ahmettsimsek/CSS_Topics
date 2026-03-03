@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+
+        <style>
+            /* 4 sn sonra kırmızı olucak şekilde*/
+            .ilk{
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                animation-name: test;
+                animation-duration: 4s;  /* Sarıdan kırmızıya geçiş tam 4 saniye sürer */
+            }
+
+            @keyframes test {
+                from{background-color:yellow}
+                to{background-color:red}
+            }
+
+
+            
+             /*belli aralıklı farklı renk olsun istersek*/
+            .ikinci {
+                width: 100px;
+                height: 100px;
+                margin-top: 30px;
+                background-color: yellow;
+                animation-name: test2;
+                animation-duration: 8s;
+            }
+
+            
+            @keyframes test2 {
+                0%{background-color:yellow}
+                25%{background-color:red}
+                50%{background-color:blue}
+                100%{background-color:purple}
+            }
+
+
+
+             /*belli aralıklı farklı renk olsun haricinde konumları ile de oynarsak*/
+            .ucuncu {
+                width: 100px;
+                height: 100px;
+                margin-top: 30px;
+                position: relative; /* Hareket (left/top) edebilmesi için relative şart */
+                background-color: yellow;
+                animation-name: test3;
+                animation-duration: 4s;
+                animation-delay: 2s; /*2sn gecikme ile bşlar  animasyon*/
+                animation-iteration-count: 2; /*işlem 2 defa gerçekleşir. infinitife ile sonsuz döngü yapabiliriz.*/
+
+                /* Yön Ayarları (Sırasıyla denemek için yorumdalar) */
+                /* animation-direction: reverse; */          /* Animasyonu sondan başa oynatır */
+                animation-direction: alternate;             /* Git-gel yapar (1. tur ileri, 2. tur geri) */
+                /* animation-direction: alternate-reverse; */ /* Önce geri, sonra ileri gider */
+
+                animation-timing-function: ease-in-out; /* Başlangıç ve bitişte yumuşak geçiş yapar */
+            }
+   
+            @keyframes test3 {
+                0%{
+                    background-color:yellow;
+                    left:0px;
+                    top: 0px;
+                }
+
+                25%{
+                    background-color:red;
+                    left:200px;
+                    top: 0px;
+                }
+
+                50%{
+                    background-color:blue;
+                    left:200px;
+                    top: 200px;
+                }
+
+                75%{
+                    background-color:plum;
+                    left:0px;
+                    top: 200px;
+                }
+
+                100%{
+                    background-color:purple;
+                    left:0px;
+                    top: 0px;
+                }
+            }
+
+
+            /*ANİMASYON BİTTİĞİNDE ESKİ HALİNDE KAL*/
+            .dort{
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                margin-top: 250px;
+                position: relative;
+                animation-name: test4;
+                animation-duration: 4s;
+                /* Animasyon biter bitmez öğe en baştaki (CSS'deki) haline geri döner */
+                animation-fill-mode: backwards;
+            }
+
+             @keyframes test4 {
+                from{top:0px;}
+                to{top:200px; background-color:red}
+            }
+
+
+            
+            /*ANİMASYON BİTTİĞİNDE son HALİNDE KAL*/
+            .bes{
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                margin-top: 30px;
+                position: relative;
+                animation-name: test5;
+                animation-duration: 4s;
+                /* Animasyon bittiğinde son keyframe'deki (100% veya 'to') değerleri korur */
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes test5 {
+                from{top:0px;}
+                to{top:200px; background-color:red;}
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="ilk"></div>
+        <div class="ikinci"></div>
+        <div class="ucuncu"></div>
+        <div class="dort"></div>
+        <div class="bes"></div>
+    </body>
+</html>
