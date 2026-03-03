@@ -1,0 +1,272 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: #ffff24;
+    
+    /* Transition (Geçiş) Ayarları */
+    transition-property: width;        /* Sadece 'width' (genişlik) değişirken animasyon uygula */
+    transition-duration: 5s;          /* Değişimin tamamlanması 5 saniye sürsün */
+    transition-timing-function: ease;  /* Geçiş yavaş başlasın, hızlansın ve yavaş bitsin */
+    transition-delay: 0s;             /* Fare üzerine geldiği anda beklemeden başlasın */
+}
+
+.box:hover{
+    width: 400px; /*üstüne gelince 400 olur genişlik*/
+}
+
+/* timing fuction olarak ease, ease-in, ease-in-out, ease-out, linear, steps, cubic-bezier */
+
+/* ease = yavaş başlar ortada hızlanır sonra yavaşlar*/
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin-top: 30px;
+    
+    /* Transition (Geçiş) Ayarları */
+    transition-property: width;        /* Sadece 'width' (genişlik) değişirken animasyon uygula */
+    transition-duration: 5s;          /* Değişimin tamamlanması 5 saniye sürsün */
+    transition-timing-function: ease;  /* Geçiş yavaş başlasın, hızlansın ve yavaş bitsin */
+    transition-delay: 0s;             /* Fare üzerine geldiği anda beklemeden başlasın */
+}
+
+.box2:hover:hover{
+    width: 400px; /*üstüne gelince 400 olur genişlik*/
+}
+
+
+/* ease-in = yavaş başlar sonra hızlanır*/
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-top: 30px;
+    
+    /* Transition (Geçiş) Ayarları */
+    transition-property: width;        /* Sadece 'width' (genişlik) değişirken animasyon uygula */
+    transition-duration: 5s;          /* Değişimin tamamlanması 5 saniye sürsün */
+    transition-timing-function: ease-in;  /* yavaş başlar sonra hızlanır */
+    transition-delay: 0s;             /* Fare üzerine geldiği anda beklemeden başlasın */
+}
+
+.box3:hover:hover{
+    width: 400px; /*üstüne gelince 400 olur genişlik*/
+}
+
+/* ease-in-out = yavaş başlar ortada sonra hızlanır sonra yavaşalar*/
+.box4{
+    width: 200px;
+    height: 200px;
+    background-color: plum;
+    margin-top: 30px;
+    
+    /* Transition (Geçiş) Ayarları */
+    transition-property: width;        /* Sadece 'width' (genişlik) değişirken animasyon uygula */
+    transition-duration: 5s;          /* Değişimin tamamlanması 5 saniye sürsün */
+    transition-timing-function: ease-in-out;  /* Geçiş yavaş başlar ortada sonra hızlanır sonra yavaşalar */
+    transition-delay: 0s;             /* Fare üzerine geldiği anda beklemeden başlasın */
+}
+
+.box4:hover:hover{
+    width: 400px; /*üstüne gelince 400 olur genişlik*/
+}
+
+
+
+
+/* ease-out = hızlı başlar sonda yavaşalar, öğe yavaşca durur*/
+.box5{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    margin-top: 30px;
+    
+    /* Transition (Geçiş) Ayarları */
+    transition-property: width;        /* Sadece 'width' (genişlik) değişirken animasyon uygula */
+    transition-duration: 5s;          /* Değişimin tamamlanması 5 saniye sürsün */
+    transition-timing-function: ease-out;  /* Geçiş hızlı başlar sonda yavaşalar, öğe yavaşca durur */
+    transition-delay: 0s;             /* Fare üzerine geldiği anda beklemeden başlasın */
+}
+
+.box5:hover:hover{
+    width: 400px; /*üstüne gelince 400 olur genişlik*/
+}
+
+/* linear = liner şekilde devam eder*/
+.box6{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin-top: 30px;
+    
+    /* Transition (Geçiş) Ayarları */
+    transition-property: width;        /* Sadece 'width' (genişlik) değişirken animasyon uygula */
+    transition-duration: 5s;          /* Değişimin tamamlanması 5 saniye sürsün */
+    transition-timing-function: linear;  /* Geçiş liner şekilde devam eder */
+    transition-delay: 0s;             /* Fare üzerine geldiği anda beklemeden başlasın */
+}
+
+.box6:hover:hover{
+    width: 400px; /*üstüne gelince 400 olur genişlik*/
+}
+
+
+
+/* steps= adım adım gider*/
+.box7{
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+    margin-top: 30px;
+    
+    /* Transition (Geçiş) Ayarları */
+    transition-property: width;        /* Sadece 'width' (genişlik) değişirken animasyon uygula */
+    transition-duration: 5s;          /* Değişimin tamamlanması 5 saniye sürsün */
+    transition-timing-function: steps(6);  /* Geçiş adım adım gider */
+    transition-delay: 0s;             /* Fare üzerine geldiği anda beklemeden başlasın */
+}
+
+.box7:hover:hover{
+    width: 400px; /*üstüne gelince 400 olur genişlik*/
+}
+
+/* cubic-bezier(2,21,1,6= dört kontrol noktası ile özel yol, sitesinden bak*/
+.box8{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin-top: 30px;
+    
+    /* Transition (Geçiş) Ayarları */
+    transition-property: width;        /* Sadece 'width' (genişlik) değişirken animasyon uygula */
+    transition-duration: 5s;          /* Değişimin tamamlanması 5 saniye sürsün */
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);  /* Geçiş dört kontrol noktası ile özel yol  */
+    transition-delay: 0s;             /* Fare üzerine geldiği anda beklemeden başlasın */
+}
+
+.box8:hover:hover{
+    width: 400px; /*üstüne gelince 400 olur genişlik*/
+}
+
+/*transition-property:transform*/
+.box9{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin: 60px 0 0 60px;
+    
+    /* Transition (Geçiş) Ayarları */
+    transition-property: transform; /* Sadece 'width' (genişlik) değişirken animasyon uygula */
+    transition-duration: 1s; /* Değişimin tamamlanması 5 saniye sürsün */
+    transition-timing-function: ease;
+    transition-delay: 0s; /* Fare üzerine geldiği anda beklemeden başlasın */
+}
+
+.box9:hover:hover{
+    transform: rotate(135deg);
+}
+
+/*transition ayarını sırasıyla tek yerde toplayabiliriz */
+.box10{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    margin: 60px 0 0 60px;
+    
+    /* Transition (Geçiş) Ayarları 
+    transition-property: transform; 
+    transition-duration: 1s; 
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    */ 
+
+    transition: transform 2s ease 0s;
+}
+
+.box10:hover:hover{
+    transform: rotate(135deg);
+}
+
+
+/*transition ayarına ek bir animasyon daha nasıl eklenşir */
+.box11{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    margin: 60px 0 0 60px;
+    
+    /* Transition (Geçiş) Ayarları 
+    transition-property: transform; 
+    transition-duration: 1s; 
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    */ 
+
+    transition: transform 1s ease 0s,
+    background-color 3s ease 0s;
+}
+
+.box11:hover:hover{
+    transform: rotate(135deg);
+    background-color: coral;
+}
+
+/*transition ayarına ek bir animasyon daha nasıl eklenşir */
+.box12{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    margin: 160px 0 0 160px;
+    
+    /* Transition (Geçiş) Ayarları 
+    transition-property: transform; 
+    transition-duration: 1s; 
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    */ 
+
+    transition: transform 1s ease 0s,
+    background-color 3s ease 0s,
+    scale 3s ease;
+}
+
+.box12:hover:hover{
+    transform: rotate(135deg);
+    background-color: coral;
+    scale: 2;
+}
+
+
+/*transitionda her şey için eklemek yerine all ile tek seferde atama yaparız */
+.box13{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    margin: 160px 0 0 160px;
+    
+    /* Transition (Geçiş) Ayarları 
+    transition-property: transform; 
+    transition-duration: 1s; 
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    */ 
+
+    transition: all 1s ease-in-out 0;
+
+    /*
+    -- all (Mülk): "Hepsini kapsa" demektir. Kutuda değişen ne varsa (width, background-color, transform, scale vb.) hepsine animasyon uygular.
+
+    -- 1s (Süre): Geçişin ne kadar süreceğini belirler.
+
+    -- ease-in-out (Zamanlama): Hareketin karakteridir. Animasyonun yavaş başlayıp, ortada hızlanıp, sonda tekrar yavaşlayacağını söyler. Bu, ease fonksiyonuna göre daha pürüzsüz ve doğal bir his verir.
+
+    -- Fare üzerine geldiği anda beklemeden başlasın yok
+    */
+}
+
+.box13:hover:hover{
+    transform: rotate(135deg);
+    background-color: coral;
+    scale: 2;
+}
+
