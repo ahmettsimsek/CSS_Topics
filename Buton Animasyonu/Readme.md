@@ -1,12 +1,7 @@
-Gemini şunu dedi:
-Harika bir 3D animasyonlu navigasyon menüsü hazırlamışsın! transform-origin ve rotateX özelliklerini kullanarak yaptığın bu "kapak açılma" efekti, modern web arayüzlerinde çok şık duran bir tekniktir.
-
-İşte bu projenin Github sayfasında profesyonel görünmesini sağlayacak, teknik detayları açıklayan README.md içeriği:
-
-🚀 3D Animated Navigation Menu
+# 🚀 3D Animated Navigation Menu
 Bu proje, CSS'in ::before ve ::after sözde öğeleri (pseudo-elements) ve 3D transform özellikleri kullanılarak hazırlanmış, interaktif bir navigasyon menüsüdür. Fare ile üzerine gelindiğinde (hover), menü elemanları üç boyutlu bir kapak açılma efektiyle renk ve içerik değiştirir.
 
-✨ Özellikler
+## ✨ Özellikler
 3D Dönüşümler: rotateX kullanılarak oluşturulan derinlik algısı.
 
 Gecikmeli Animasyon: Üst ve alt kapakların (before & after) ardışık açılması için transition-delay kullanımı.
@@ -15,7 +10,7 @@ Dinamik İçerik: CSS attr(data-text) özelliği sayesinde HTML'deki verinin oto
 
 Tam Hizalama: Flexbox kullanılarak sayfa ortasında mükemmel konumlandırma.
 
-🛠️ Kullanılan Teknolojiler
+## 🛠️ Kullanılan Teknolojiler
 HTML5: Yapısal iskelet ve data-* nitelikleri.
 
 CSS3: * Position: Absolute/Relative (Konumlandırma)
@@ -26,7 +21,7 @@ Transition (Geçiş efektleri)
 
 Pseudo-elements (::before, ::after)
 
-📖 Teknik Detaylar
+## 📖 Teknik Detaylar
 1. Menteşe Mantığı (transform-origin)
 Menü elemanlarının bir kapı veya kapak gibi açılmasını sağlamak için dönüş noktaları sabitlenmiştir:
 
