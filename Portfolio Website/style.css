@@ -1,3 +1,7 @@
+/* ==========================================================================
+   1. FONT VE GENEL AYARLAR (RESET)
+   ========================================================================== */
+
 /* Google Fonts'tan Poppins yazı tipini projeye dahil ediyoruz */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
@@ -20,23 +24,26 @@ html{
 body{
     width: 100%;
     height: 100%;
-    overflow-x: hidden; /* Yatayda kaydırma çubuğunu gizler */
-    background-color: black;
+    overflow-x: hidden;       /* Yatay kaydırma çubuğunun çıkmasını engeller */
+    background-color: black;  /* Sayfa arka plan rengi */
 }
 
-/* ÜST MENÜ (Header) */
+/* ==========================================================================
+   2. ÜST MENÜ (HEADER) VE LOGO
+   ========================================================================== */
+
 header{
     margin-top: 15px;
     position: fixed; /* Sayfa kaysa bile üstte sabit kalır */
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
+    padding: 1rem 9%; /* Üst-alt 1rem, sağ-sol %9 iç boşluk */
     background-color: transparent;
-    filter: drop-shadow(10px) ;
-    display: flex;
+    filter: drop-shadow(10px) ; /* Hafif bir gölge efekti */
+    display: flex; /* Logo ve Navigasyonu yan yana dizer */
     justify-content: space-between; /* Logo solda, menü sağda */
-    align-items: center;
+    align-items: center; /* Dikeyde ortalar */
     z-index: 100; /* Diğer elemanların üstünde görünmesini sağlar */
 }
 
@@ -45,31 +52,35 @@ header{
     color: #b74b4b;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.5s ease;
+    transition: 0.5s ease; /* Efektlerin süresi */
 }
 
 .logo:hover{
-    transform: scale(1.4);  /* Üzerine gelince logoyu büyütür */
+    transform: scale(1.4);  /* Üzerine gelince logoyu %40 büyütür */
 }
 
 nav a{
     font-size: 1.8rem;
     color: white;
-    margin-left: 4rem;
+    margin-left: 4rem; /* Linkler arası boşluk */
     font-weight: 500;
     transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid transparent; /* Hover efekti için gizli kenarlık */
 }
 
-/* Aktif olan link ve hover durumu */
+/* Üzerine gelinen link ve o an aktif olan sayfa linki stili */
 a:hover, a.active{
     color:#b74b4b;
     border-bottom: 3px solid #b74b4b; ;
 }
 
+/* ==========================================================================
+   3. GİRİŞ ALANI (HOME SECTION)
+   ========================================================================== */
+
 /* ANA İÇERİK (Home Section) */
 section{
-    min-height: 100vh;/* ANA İÇERİK (Home Section) */
+    min-height: 100vh; /* Ekranın tam yüksekliğini kaplar */
     padding: 5rem 9% 5rem;
 }
 
@@ -77,7 +88,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8rem; /* İçerik ve resim arasındaki boşluk */
+    gap: 8rem;  /* Resim ve yazı bloğu arasındaki mesafe */
     background-color: black;
 }
 
@@ -113,17 +124,21 @@ p {
 
 .home-img img{
     position: relative;
-    width: 27vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px solid #b74b4b;
+    width: 27vw;              /* Ekran genişliğine göre dinamik boyut */
+    border-radius: 50%;       /* Resmi tam yuvarlak yapar */
+    box-shadow: 0 0 25px #b74b4b; /* Resim etrafındaki parlama efekti */
     cursor: pointer;
     transition: 0.2s ease;
 }
 
 .home-img img:hover{
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Üzerine gelince hafif aydınlanır */
     font-weight: 500;
 }
+
+/* ==========================================================================
+   4. SOSYAL MEDYA İKONLARI VE BUTONLAR
+   ========================================================================== */
 
 .social-icons a{
     display: inline-flex;
@@ -142,7 +157,7 @@ p {
 
 .social-icons a:hover{
     color: black;
-    transform: scale(1.3) translateY(-5px);
+    transform: scale(1.3) translateY(-5px); /* Büyür ve hafif yukarı kalkar */
     background-color: #b74b4b;
     box-shadow: 0 0 25px #b74b4b;
 }
@@ -154,7 +169,7 @@ p {
     border-radius: 4rem;
     font-size: 1.3rem;
     color: #b74b4b;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.3rem; /* Harf arası boşluk */
     font-weight: 600;
     border: 2px solid #b74b4b;
     transition: 0.3s ease;
@@ -168,6 +183,10 @@ p {
     box-shadow: 0 0 25px #b74b4b;
 }
 
+/* ==========================================================================
+   5. OTOMATİK YAZI ANİMASYONU (TYPING EFFECT)
+   ========================================================================== */
+
 .typing-text{
     font-size: 34px;
     font-weight: 600;
@@ -179,12 +198,14 @@ p {
     padding-right: 5px; /* Çubukla metin arasında çok az boşluk */
 }
 
+/* Kelimelerin değiştiği sanal eleman */
 .typing-text span::before{
     content: "Software Developer";
     color: #b74b4b;
-    animation: words 20s infinite;
+    animation: words 20s infinite; /* 20 saniyede bir döngüyü tamamlar */
 }
 
+/* Yanıp sönen imleç (İnce çubuk efekti) */
 .typing-text span::after{
     content: "";
     background-color: black;
@@ -193,15 +214,17 @@ p {
     height: 100%;
     border-left: 3px solid black;
     right: -8;
-    animation: cursor 0.6s infinite;
+    animation: cursor 0.6s infinite; /* Hızlı yanıp sönme */
 }
 
+/* İmlecin yanıp sönme rengini belirleyen animasyon */
 @keyframes cursor{
     to{
         border-left: 3px solid #b74b4b;
     }
 }
 
+/* Kelimeleri sırasıyla değiştiren animasyon */
 @keyframes words{
     0%,20%{
         content: "Web Developer";
@@ -221,10 +244,15 @@ p {
 }
 
 
+/* ==========================================================================
+   6. MOBİL UYUMLULUK (RESPONSIVE DESIGN)
+   ========================================================================== */
+
+/* Tablet ve Küçük Ekranlar (995px altı) */
 @media(max-width:995px){
     nav{
         position: absolute;
-        display: none;
+        display: none; /* Menü ikona basılana kadar gizli kalır */
         top: 0;
         right: 0;
         width:40%;
@@ -263,7 +291,7 @@ p {
 
 @media(max-width: 995px){
     .home{
-        flex-direction: column;
+        flex-direction: column;/* Mobilde resim ve yazı alt alta gelir */
         margin: 5rem 4rem;
     }
 
@@ -276,7 +304,7 @@ p {
     }
 
     .home-img img{
-        width: 70vw;
+        width: 70vw; /* Mobilde resim daha büyük görünür */
         margin-top: 4rem;
     }
 }
